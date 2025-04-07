@@ -5,10 +5,11 @@ const dotenv = require("dotenv");
 dotenv.config();
 const userService = require("./user-service.js");
 const jwt = require('jsonwebtoken');
-const passportJWT = require('passport-jwt');
+const passport = require('passport');
+const passportJWT = require("passport-jwt");
 
 let ExtractJwt = passportJWT.ExtractJwt;
-let JwtStrategy = passportJWT.JwtStrategy;
+let JwtStrategy = passportJWT.Strategy;
 
 let jwtOptions = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
