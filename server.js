@@ -1,3 +1,7 @@
+// test accounts:
+// {"userName": "moomer", "password": "1234", "password2": "1234"}
+// {"userName": "poobie", "password": "moooo:3", "password2": "moooo:3"}
+
 const express = require('express');
 const app = express();
 const cors = require("cors");
@@ -12,7 +16,7 @@ let ExtractJwt = passportJWT.ExtractJwt;
 let JwtStrategy = passportJWT.Strategy;
 
 let jwtOptions = {
-    jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('jwt'),
+    jwtFromRequest: ExtractJwt.fromAuthHeaderWithScheme('JWT'),
     secretOrKey: process.env.JWT_SECRET,
 };
 
@@ -30,10 +34,11 @@ let strategy = new JwtStrategy(jwtOptions, function (jwt_payload, next) {
 
 const HTTP_PORT = process.env.PORT || 8080;
 
-app.use(express.json());
 app.use(cors());
-passport.use(strategy);
+app.use(express.json());
 app.use(passport.initialize());
+passport.use(strategy);
+
 
 app.post("/api/user/register", (req, res) => {
     userService.registerUser(req.body)
@@ -54,6 +59,7 @@ app.post("/api/user/login", (req, res) => {
         };
 
         let token = jwt.sign(payload, jwtOptions.secretOrKey);
+        console.log(`token: ${token}`);
         //retur n the token!!
         res.json({message: "logged in!!", token: token});
     }).catch(msg => {
@@ -72,6 +78,8 @@ app.get("/api/user/favourites", passport.authenticate('jwt', { session: false })
 });
 
 app.put("/api/user/favourites/:id", passport.authenticate('jwt', {session:false}), (req, res) => {
+    console.log("hit");
+    console.log(req.user._id);
     userService.addFavourite(req.user._id, req.params.id)
     .then(data => {
         res.json(data)
