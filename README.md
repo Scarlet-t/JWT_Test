@@ -1,4 +1,4 @@
-# ⋆. 𐙚˚࿔ THIS SERVES AS A BACKEND TO THE FOLLOWING PROJECT 𝜗𝜚˚⋆  
+# ⋆. 𐙚˚࿔SERVES AS A BACKEND TO THE FOLLOWING PROJECT𝜗𝜚˚⋆  
 
 [Museum-WebUI](https://museum-web-ui.vercel.app/)   
 [Repo](https://github.com/Scarlet-t/Museum-WebUI/)  
