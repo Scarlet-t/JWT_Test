@@ -1,6 +1,9 @@
+# THIS SERVES AS A BACKEND TO THE FOLLOWING PROJECT:  
+[insert later]
+
 # ⋆⊹♡˚ʚ Funny Funtime With JWT ɞ˚♡⊹⋆
 
-> 𓆩❤︎𓆪 an Express.js API situation I made to understand JWT authentication. 
+> 𓆩❤︎𓆪 an Express.js API situation I made to understand JWT authentication.
 
 in theory, one can:
 * register
