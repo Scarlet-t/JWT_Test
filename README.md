@@ -1,9 +1,9 @@
-# ⋆. 𐙚˚࿔SERVES AS A BACKEND TO THE FOLLOWING PROJECT𝜗𝜚˚⋆  
+# ⋆. 𐙚˚࿔ A BACKEND TO THE FOLLOWING PROJECT 𝜗𝜚˚⋆  
 
 [Museum-WebUI](https://museum-web-ui.vercel.app/)   
 [Repo](https://github.com/Scarlet-t/Museum-WebUI/)  
 
-# ⋆⊹♡˚ʚ Funny Funtime With JWT ɞ˚♡⊹⋆
+# ⋆⊹♡˚ʚ JWT-Test (or Funny Funtime With JWT) ɞ˚♡⊹⋆
 
 > 𓆩❤︎𓆪 an Express.js API situation I made to understand JWT authentication.
 
