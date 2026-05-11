@@ -1,6 +1,6 @@
 # THIS SERVES AS A BACKEND TO THE FOLLOWING PROJECT:  
 
-[Museum-WebUI]([https://funny-funtime-with-jwt-yippee.vercel.app/?utm_source=chatgpt.com](https://github.com/Scarlet-t/Museum-WebUI))
+[Museum-WebUI](https://funny-funtime-with-jwt-yippee.vercel.app/?utm_source=chatgpt.com](https://github.com/Scarlet-t/Museum-WebUI/)
 
 # ⋆⊹♡˚ʚ Funny Funtime With JWT ɞ˚♡⊹⋆
 
@@ -21,7 +21,7 @@ in theory, one can:
 # ⋆⊹♡˚ʚ API LINK ɞ˚♡⊹⋆
 >(/ not defined) 
 
-[Funny Funtime With JWT Yippee](https://funny-funtime-with-jwt-yippee.vercel.app/?utm_source=chatgpt.com)
+[Funny Funtime With JWT Yippee](https://funny-funtime-with-jwt-yippee.vercel.app/)
 
 ---
 
